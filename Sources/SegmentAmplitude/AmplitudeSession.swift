@@ -41,8 +41,8 @@ public class AmplitudeSession: EventPlugin, iOSLifecycle {
     public var analytics: Analytics?
     
     var active = false
-    
-    private var sessionID: TimeInterval?
+    //forked repo to make sessionID public
+    public var sessionID: TimeInterval?
     private var lastEventFiredTime = Date()
     private var minSessionTime: TimeInterval = 5 * 60
     
